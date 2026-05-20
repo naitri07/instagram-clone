@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- ── Left Sidebar ── -->
+    <aside class="sidebar">
+      <div class="sidebar__logo">Instagram</div>
+
+      <nav class="sidebar__nav">
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav-item" id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Search</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-brands fa-wpexplorer"></i>
+          <span>Explore</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span>Reels</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Messages</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-heart"></i>
+          <span>Notifications</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-plus-square"></i>
+          <span>Create</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-user"></i>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <a href="#" class="nav-item sidebar__more">
+        <i class="fa-solid fa-bars"></i>
+        <span>More</span>
+      </a>
+    </aside>
+
+    <!-- ── Main Feed ── -->
+    <main class="feed">
+
+      <!-- Stories -->
+      <section class="stories">
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2015/05/14/12/17/santorini-766679_640.jpg" alt="lavish_escapess" />
+          </div>
+          <span>lavish_esc</span>
+        </div>
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2013/12/20/00/42/palma-231138_640.jpg" alt="WanderlustWaves" />
+          </div>
+          <span>WanderlustW</span>
+        </div>
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2020/03/25/16/55/spain-4967963_640.jpg" alt="wandergrammm" />
+          </div>
+          <span>wandergramm</span>
+        </div>
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2019/02/28/14/00/tibet-4025999_640.jpg" alt="ChicTravels" />
+          </div>
+          <span>ChicTravels</span>
+        </div>
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2022/07/10/19/30/house-7313645_640.jpg" alt="EleganceAbroad" />
+          </div>
+          <span>EleganceA</span>
+        </div>
+        <div class="story-card">
+          <div class="story-ring">
+            <img src="https://cdn.pixabay.com/photo/2016/01/04/19/43/santorini-1121500_640.jpg" alt="HappyTrails" />
+          </div>
+          <span>HappyTrails</span>
+        </div>
+      </section>
+
+      <!-- Posts -->
+      <article class="post">
+        <header class="post__header">
+          <div class="post__user">
+            <div class="avatar-ring">
+              <img src="https://cdn.pixabay.com/photo/2013/07/30/10/08/dacha-168820_640.jpg" alt="shinuu.07" />
+            </div>
+            <div class="post__meta">
+              <strong>shinuu.07</strong>
+              <span>1 hour ago</span>
+            </div>
+          </div>
+          <button class="btn-icon" aria-label="Post options"><i class="fa-solid fa-ellipsis"></i></button>
+        </header>
+
+        <div class="post__image">
+          <img src="https://cdn.pixabay.com/photo/2022/10/05/05/40/sunset-7499759_1280.jpg" alt="Sunset post" loading="lazy" />
+        </div>
+
+        <footer class="post__footer">
+          <div class="post__actions">
+            <div class="post__actions--left">
+              <button class="btn-icon like-btn" aria-label="Like post">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="btn-icon" aria-label="Comment">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <button class="btn-icon" aria-label="Share">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <button class="btn-icon save-btn" aria-label="Save post">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+          <p class="post__likes"><strong>2,847 likes</strong></p>
+          <p class="post__caption"><strong>shinuu.07</strong> Golden hour in the hills 🌅 <span class="caption__more">more</span></p>
+          <p class="post__comments-link">View all 43 comments</p>
+
+          <div class="post__add-comment">
+            <input type="text" placeholder="Add a comment…" class="comment-input" />
+            <button class="btn-text">Post</button>
+          </div>
+        </footer>
+      </article>
+
+      <article class="post">
+        <header class="post__header">
+          <div class="post__user">
+            <div class="avatar-ring">
+              <img src="https://cdn.pixabay.com/photo/2021/05/29/03/00/beach-6292382_640.jpg" alt="NomadicEscapes" />
+            </div>
+            <div class="post__meta">
+              <strong>NomadicEscapes</strong>
+              <span>2 hours ago</span>
+            </div>
+          </div>
+          <button class="btn-icon" aria-label="Post options"><i class="fa-solid fa-ellipsis"></i></button>
+        </header>
+
+        <div class="post__image">
+          <img src="https://cdn.pixabay.com/photo/2017/08/15/09/40/church-2643296_1280.jpg" alt="Church post" loading="lazy" />
+        </div>
+
+        <footer class="post__footer">
+          <div class="post__actions">
+            <div class="post__actions--left">
+              <button class="btn-icon like-btn" aria-label="Like post">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="btn-icon" aria-label="Comment">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <button class="btn-icon" aria-label="Share">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <button class="btn-icon save-btn" aria-label="Save post">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+          <p class="post__likes"><strong>1,204 likes</strong></p>
+          <p class="post__caption"><strong>NomadicEscapes</strong> Found this hidden gem while wandering 🏛️ <span class="caption__more">more</span></p>
+          <p class="post__comments-link">View all 21 comments</p>
+
+          <div class="post__add-comment">
+            <input type="text" placeholder="Add a comment…" class="comment-input" />
+            <button class="btn-text">Post</button>
+          </div>
+        </footer>
+      </article>
+
+      <article class="post">
+        <header class="post__header">
+          <div class="post__user">
+            <div class="avatar-ring">
+              <img src="https://cdn.pixabay.com/photo/2016/08/10/12/44/zakynthos-1583127_640.jpg" alt="beachyybitch" />
+            </div>
+            <div class="post__meta">
+              <strong>beachyybitch</strong>
+              <span>5 hours ago</span>
+            </div>
+          </div>
+          <button class="btn-icon" aria-label="Post options"><i class="fa-solid fa-ellipsis"></i></button>
+        </header>
+
+        <div class="post__image">
+          <img src="https://cdn.pixabay.com/photo/2023/07/01/18/21/water-8100724_1280.jpg" alt="Water post" loading="lazy" />
+        </div>
+
+        <footer class="post__footer">
+          <div class="post__actions">
+            <div class="post__actions--left">
+              <button class="btn-icon like-btn" aria-label="Like post">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button class="btn-icon" aria-label="Comment">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <button class="btn-icon" aria-label="Share">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <button class="btn-icon save-btn" aria-label="Save post">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+          <p class="post__likes"><strong>5,512 likes</strong></p>
+          <p class="post__caption"><strong>beachyybitch</strong> Crystal waters calling 🌊🐚 <span class="caption__more">more</span></p>
+          <p class="post__comments-link">View all 89 comments</p>
+
+          <div class="post__add-comment">
+            <input type="text" placeholder="Add a comment…" class="comment-input" />
+            <button class="btn-text">Post</button>
+          </div>
+        </footer>
+      </article>
+
+    </main>
+
+    <!-- ── Right Sidebar ── -->
+    <aside class="right-sidebar">
+
+      <!-- Logged-in user -->
+      <div class="right-user">
+        <div class="avatar-ring avatar-ring--sm">
+          <img src="https://cdn.pixabay.com/photo/2013/07/30/10/08/dacha-168820_640.jpg" alt="shinuu.07" />
+        </div>
+        <div class="right-user__info">
+          <strong>shinuu.07</strong>
+          <span>Shinu</span>
+        </div>
+        <button class="btn-text">Switch</button>
+      </div>
+
+      <div class="suggestions-header">
+        <span>Suggested for you</span>
+        <button class="btn-text">See All</button>
+      </div>
+
+      <div class="suggestion-item">
+        <div class="avatar-ring avatar-ring--sm">
+          <img src="https://cdn.pixabay.com/photo/2017/07/31/23/32/doughnut-2562004_640.jpg" alt="FoodyyFrenzy" />
+        </div>
+        <div class="suggestion__info">
+          <strong>FoodyyFrenzy</strong>
+          <span>Followed by wandergramm</span>
+        </div>
+        <button class="btn-text follow-btn">Follow</button>
+      </div>
+
+      <div class="suggestion-item">
+        <div class="avatar-ring avatar-ring--sm">
+          <img src="https://cdn.pixabay.com/photo/2023/07/01/18/21/water-8100724_640.jpg" alt="PeakHunter" />
+        </div>
+        <div class="suggestion__info">
+          <strong>PeakHunter</strong>
+          <span>Suggested for you</span>
+        </div>
+        <button class="btn-text follow-btn">Follow</button>
+      </div>
+
+      <div class="suggestion-item">
+        <div class="avatar-ring avatar-ring--sm">
+          <img src="https://cdn.pixabay.com/photo/2016/08/10/12/44/zakynthos-1583127_640.jpg" alt="beachyybitch" />
+        </div>
+        <div class="suggestion__info">
+          <strong>beachyybitch</strong>
+          <span>New to Instagram</span>
+        </div>
+        <button class="btn-text follow-btn">Follow</button>
+      </div>
+
+      <div class="suggestion-item">
+        <div class="avatar-ring avatar-ring--sm">
+          <img src="https://cdn.pixabay.com/photo/2022/08/26/07/57/tavern-7411977_640.jpg" alt="excursionist" />
+        </div>
+        <div class="suggestion__info">
+          <strong>excursionist</strong>
+          <span>Suggested for you</span>
+        </div>
+        <button class="btn-text follow-btn">Follow</button>
+      </div>
+
+      <footer class="right-footer">
+        <nav class="right-footer__links">
+          <a href="#">About</a> · <a href="#">Help</a> · <a href="#">Press</a> · <a href="#">API</a> · <a href="#">Jobs</a> · <a href="#">Privacy</a> · <a href="#">Terms</a>
+        </nav>
+        <p>© 2025 INSTAGRAM FROM META</p>
+      </footer>
+    </aside>
+
+  </div><!-- /app -->
+
+  <script src="app.js"></script>
+</body>
+</html>
